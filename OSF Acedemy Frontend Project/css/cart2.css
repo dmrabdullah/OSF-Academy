@@ -1,0 +1,489 @@
+/********************** Cart Rules **********************/
+section.payment {
+    height: 160vh;
+}
+
+div.items div.item div.amountpick {
+    display: inline-block;
+    position: relative; 
+}
+
+div.items div.item div.amountpick > input[type="number"] {
+      -webkit-appearance: textfield;
+      -moz-appearance: textfield;
+      appearance: textfield;
+      width: 100%;
+      border: 0.15rem solid #e8e2d6;
+      border-radius: 35px;
+      padding: 0.5714285714rem 1.4285714286rem;
+      font-size: 1.1428571429rem;
+      background-color: #ffffff;
+      background: linear-gradient(to top, #08d2bd, #1b9bb2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center; 
+}
+
+div.item div.amountpick > input[type="number"]::-webkit-inner-spin-button, div.item div.amountpick > input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none; 
+}
+
+@media print {
+    div.item div.amountpick > input[type="number"] {
+        visibility: visible;
+        background: transparent;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial; 
+    } 
+}
+
+div.item div.amountpick > button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: #999999;
+      font-size: 1.2857142857rem;
+      width: 1.4285714286rem;
+      height: 1.4285714286rem;
+      border-radius: 50%;
+      transition: all 0.5s ease; 
+}
+
+div.item div.amountpick > button:hover {
+        background-color: #f1eee6; 
+}
+
+div.item div.amountpick > button.minus {
+        left: 15%; 
+}
+
+div.item div.amountpick > button.plus {
+        right: 15%; 
+}
+
+  
+form.manage div.checkout div.shipping ul.radios li > input[type="radio"] {
+    opacity: 0;
+    visibility: hidden; 
+}
+
+form.manage div.checkout div.shipping ul.radios li > input[type="radio"]:checked + label:after {
+      opacity: 1; 
+}
+
+form.manage div.checkout div.shipping ul.radios li > label {
+    position: relative;
+    cursor: pointer; 
+}
+
+form.manage div.checkout div.shipping ul.radios li > label:hover:before {
+      box-shadow: 0 0 0.3571428571rem #ddd; 
+}
+
+form.manage div.checkout div.shipping ul.radios li > label:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -2rem;
+    background-color: transparent;
+    padding: 0.4285714286rem;
+    border: 0.15rem solid #e8e2d6;
+    border-radius: 50%;
+    content: "";
+    transition: all 0.2s ease; }
+form.manage div.checkout div.shipping ul.radios li > label:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1.72rem;
+    background-color: #84bc22;
+    padding: 0.2857142857rem;
+    border: none;
+    border-radius: 50%;
+    content: "";
+    transition: all 0.5s ease;
+      opacity: 0; 
+}
+
+section.payment {
+    padding-bottom: 2.8571428571rem;
+    background-color: #F1EDEA; 
+}
+
+section.payment .cart-wrapper {
+      background-color: #ffffff;
+      border-radius: 10px; 
+}
+
+section.payment .cart-wrapper div.items {
+        padding: 7.1428571429rem;
+        position: relative; 
+}
+
+@media (max-width: 1050px) {
+    section.payment .cart-wrapper div.items {
+        padding: 4.2857142857rem; 
+    } 
+}
+
+@media (max-width: 800px) {
+    main section.cart .wrapper div.items {
+        padding: 2.1428571429rem; 
+    } 
+}
+
+section.payment .cart-wrapper div.items:after {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    left: 5%;
+    border-bottom: 0.15rem solid #e8e2d6;
+    content: ""; 
+}
+
+section.payment .cart-wrapper div.items div.item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+@media (max-width: 800px) {
+    section.payment .cart-wrapper div.items div.item {
+        justify-content: space-around; 
+    } 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper div.items div.item {
+        justify-content: space-between; 
+    } 
+}
+
+section.payment .cart-wrapper div.items div.item:not(:last-child) {
+    margin-bottom: 2.1428571429rem; 
+}
+
+section.payment .cart-wrapper div.items div.item img {
+    width: 10%;
+    border-radius: 10px; 
+}
+
+@media (max-width: 800px) {
+    section.payment .cart-wrapper div.items div.item img {
+        width: 20%; 
+    } 
+}
+
+section.payment .cart-wrapper div.items div.item div.info {
+    width: 50%;
+    padding-left: 1.5714285714rem;
+    text-align: left; 
+}
+
+@media (max-width: 800px) {
+    section.payment .cart-wrapper div.items div.item div.info {
+        display: none; 
+    } 
+}
+
+section.payment .cart-wrapper div.items div.item div.info h4 {
+    font-size: 1.1428571429rem;
+    color: #45413e;
+    margin-bottom: 1rem; 
+}
+
+section.payment .cart-wrapper div.items div.item div.info span {
+    font-size: 1rem;
+    color: #bdc3c7; 
+}
+
+section.payment .cart-wrapper div.items div.item div.amountpick {
+    width: 10%; 
+}
+
+
+@media (max-width: 800px) {
+    section.payment .cart-wrapper div.items div.item div.amountpick {
+        min-width: 70px; 
+    } 
+}
+
+section.payment .cart-wrapper div.items div.item h3.price {
+    width: 25%;
+    text-align: center;
+    font-size: 2.1428571429rem;
+    color: #45413e; 
+}
+
+@media (max-width: 800px) {
+    section.payment .cart-wrapper div.items div.item h3.price {
+        font-size: 1.7142857143rem; 
+    } 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper div.items div.item h3.price {
+        font-size: 1.1428571429rem;
+        width: 15%; 
+    } 
+}
+
+section.payment .cart-wrapper div.items div.item div.delete {
+    width: 5%; 
+}
+
+section.payment .cart-wrapper div.items div.item div.delete svg {
+    font-size: 1.5rem;
+    color: #e8e2d6; 
+}
+
+section.payment .cart-wrapper div.items div.item div.delete button {
+    display: inline-block;
+    border: 0.15rem solid #e8e2d6;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0.3571428571rem 0.5714285714rem;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
+section.payment .cart-wrapper div.items div.item div.delete button:hover {
+    background-color: #e8e2d6; 
+}
+
+section.payment .cart-wrapper div.items div.item div.delete button svg {
+    color: #45413e;
+    font-size: 1rem;
+    opacity: 0.5; 
+}
+
+section.payment .cart-wrapper form.manage {
+    padding: 5.3571428571rem 7.1428571429rem;
+    display: flex;
+    justify-content: space-between; 
+}
+section.payment .cart-wrapper form.manage * {
+    font-size: 1rem; 
+}
+
+@media (max-width: 1050px) {
+    form.manage {
+        padding: 2.8571428571rem;
+        flex-direction: column;
+        align-items: center; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.coupon {
+    width: 40%;
+    text-align: left; 
+}
+
+@media (max-width: 1050px) {
+    section.payment .cart-wrapper form.manage div.coupon {
+        width: 60%;
+        margin-bottom: 1rem; 
+    } 
+}
+
+@media (max-width: 850px) {
+    section.payment .cart-wrapper form.manage div.coupon {
+        width: 95%; 
+    } 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper form.manage div.coupon {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.coupon input[type="text"] {
+    width: 60%;
+    margin-right: 5%;
+    border-radius: 35px;
+    border: 0.15rem solid #e8e2d6;
+    padding: 0.7142857143rem 1.4285714286rem;
+    color: #45413e;
+    font-size: 1rem;
+    transition: all 0.5s ease; 
+}
+
+section.payment .cart-wrapper form.manage div.coupon input[type="text"]:focus {
+    border-color: #84bc22; 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper form.manage div.coupon input[type="text"] {
+        width: 90%;
+        margin: 0 0 1rem; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.coupon input[type="submit"] {
+    width: 30%;
+    border-color: #84bc22;
+    color: #84bc22;
+    background-color: transparent; 
+}
+
+section.payment .cart-wrapper form.manage div.coupon input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: #84bc22; 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper form.manage div.coupon input[type="submit"] {
+        width: 90%; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.checkout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start; 
+}
+
+section.payment .cart-wrapper form.manage div.checkout * {
+    color: #45413e; 
+}
+
+@media (max-width: 1050px) {
+    section.payment .cart-wrapper form.manage div.checkout {
+        width: 60%; 
+    } 
+}
+
+@media (max-width: 850px) {
+    section.payment .cart-wrapper form.manage div.checkout {
+        width: 95%; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.checkout > div {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start; 
+}
+
+section.payment .cart-wrapper form.manage div.checkout h5, section.payment .cart-wrapper form.manage div.checkout span, section.payment .cart-wrapper form.manage div.checkout ul.radios {
+    text-align: left; }
+section.payment .cart-wrapper form.manage div.checkout h5 {
+    width: 55%;
+    text-transform: uppercase; 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper form.manage div.checkout div.btns {
+        flex-direction: column;
+        align-items: center; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.checkout div.btns button.update {
+    min-width: 35%;
+    white-space: nowrap;
+    border-color: #84bc22;
+    color: #84bc22;
+    background-color: #ffffff;
+    margin-right: 5%; 
+}
+
+section.payment .cart-wrapper form.manage div.checkout div.btns button.update:hover {
+    color: #ffffff;
+    background-color: #84bc22; 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper form.manage div.checkout div.btns button.update {
+        width: 90%;
+        margin: 0 0 1rem; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.checkout div.btns input[type="submit"] {
+    min-width: 55%;
+    color: #ffffff;
+    background-color: #84bc22;
+    border-color: transparent; 
+}
+
+section.payment .cart-wrapper form.manage div.checkout div.btns input[type="submit"]:hover {
+    border-color: #84bc22;
+    color: #84bc22;
+    background-color: #ffffff; 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper form.manage div.checkout div.btns input[type="submit"] {
+        width: 90%; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.checkout div.subtotal {
+    margin-top: 3rem; 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper form.manage div.checkout div.subtotal {
+        width: 100%;
+        justify-content: space-between; 
+    } 
+}
+
+section.payment .cart-wrapper form.manage div.checkout div.shipping {
+    margin-top: 2.1428571429rem; 
+}
+
+@media (max-width: 600px) {
+    section.payment .cart-wrapper form.manage div.checkout div.shipping {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+section.payment .cart-wrapper form.manage div.checkout div.shipping > h5 {
+                  width: 100%;
+                  text-align: left;
+                  margin-bottom: 2rem; } }
+            section.payment .cart-wrapper form.manage div.checkout div.shipping ul.radios {
+              width: 45%; }
+              section.payment .cart-wrapper form.manage div.checkout div.shipping ul.radios li {
+                padding-left: 8%; }
+                section.payment .cart-wrapper form.manage div.checkout div.shipping ul.radios li:not(:last-child) {
+                  margin-bottom: 1rem; }
+                @media (max-width: 600px) {
+                  section.payment .cart-wrapper form.manage div.checkout div.shipping ul.radios li {
+                    min-width: 160px; } }
+          section.payment .cart-wrapper form.manage div.checkout div.total {
+            display: flex;
+            align-items: center;
+            margin-top: 3.8571428571rem; }
+            @media (max-width: 600px) {
+              section.payment .cart-wrapper form.manage div.checkout div.total {
+                width: 100%;
+                justify-content: space-between; } }
+            section.payment .cart-wrapper form.manage div.checkout div.total span.price {
+              font-size: 3.4285714286rem; }
+              @media (max-width: 800px) {
+                section.payment .cart-wrapper form.manage div.checkout div.total span.price {
+                  font-size: 1.7142857143rem; } }
+
+
+
+
+
+
+
+
+
+

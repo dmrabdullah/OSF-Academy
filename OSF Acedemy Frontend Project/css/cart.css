@@ -1,0 +1,615 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+body {
+    background: #f1edea;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+/******************* LOGIN ENTRY RULES *******************/
+
+.navbar .login {
+    background-color: white;
+    border: none;
+    padding: 0;
+    padding-right: 5px;
+}
+
+/******************* NAVIGATION MENU RULES *********************/
+
+.navbar  {
+    overflow: hidden;
+    background: white;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+.navbar .rest, .navbar .d-btn {
+    color: #605d5a;
+}
+
+.top-drop {
+    border: none;
+}
+
+.navbar a {
+    float: left; 
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 6px;
+    color: #a19f9e;
+}
+
+.d {
+    float: left;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.d .d-btn {
+    font-size: 14px;
+    color: #605d5a;
+    border: none;
+    padding: 25px 20px;
+    background: inherit;
+    border:none;
+}
+
+.navbar .rest {
+    padding: 25px 20px;
+}
+
+.d-content {
+    display: none;
+    position: fixed;
+    background: #262a32;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+
+    
+}
+
+.navbar .fa-solid, .fa-regular {
+    padding-left: 5px;
+}
+
+.column {
+    float: left;
+    width: 16%;
+    background: #262a32;
+    height: 480px;
+    margin-left: 25px;
+}
+
+.column a {
+    display: block;
+    float: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.column img {
+    margin-top: 25px;
+}
+
+.navbar .dropdown .dropdown-menu {
+    z-index: 12;
+}
+
+.cntr {
+    position: absolute;
+    left: 93%;
+    text-align: center;
+}
+
+.cntr .notify::before {
+    position: absolute;
+    content: attr(data-count);
+    top: 0px;
+    right: -3px;
+    font-size: 11px;
+    color: #84bc22;
+    padding: 3px 5px;
+    background: white;
+    border: #84bc22 solid 1px;
+    border-color: #84bc22;
+    border-radius: 50px;
+    line-height: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+.notify.add-numb::before {
+    opacity: 1;
+
+}
+
+.centr {
+    position: absolute;
+    left: 90%;
+    text-align: center;
+}
+
+.centr .wish::before {
+    position: absolute;
+    content: attr(data-count-1);
+    top: 0px;
+    right: -3px;
+    font-size: 11px;
+    color: #84bc22;
+    padding: 3px 5px;
+    background: white;
+    border: #84bc22 solid 1px;
+    border-color: #84bc22;
+    border-radius: 50px;
+    line-height: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+.wish.add-numb1::before {
+    opacity: 1;
+
+}
+
+
+/********************** END OF NAVIGATION MENU **********************/
+
+/********************** HOVER STATE RULES *********************/
+
+.navbar a:hover {
+    color: white;
+}
+
+.navbar .rest:hover {
+    background: white;
+}
+
+.d-btn:hover, .navbar .rest:hover {
+    border-bottom: 2px solid #84bc22;
+}
+
+.column .kara:hover {
+    color: #a19f9e;
+}
+
+.d-btn:hover, .navbar .rest:hover {
+    background: #262a32;
+    color: white;
+}
+
+.d:hover .d-content {
+    display: block;
+}
+
+
+
+/**************************** END OF HOVER STATE RULES ****************************/
+
+/**************************** MAIN RULES ****************************/
+
+
+
+
+
+
+div.cart-header {
+    margin-top: 130px;
+} 
+
+
+
+.cntr {
+    position: absolute;
+    left: 93%;
+    text-align: center;
+}
+
+.cntr .notify::before {
+    position: absolute;
+    content: attr(data-count);
+    content: "0";
+    top: 0px;
+    right: -3px;
+    font-size: 11px;
+    color: #84bc22;
+    padding: 3px 5px;
+    background: white;
+    border: #84bc22 solid 1px;
+    border-color: #84bc22;
+    border-radius: 50px;
+    line-height: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+.notify.add-numb::before {
+    opacity: 1;
+
+}
+
+.centr {
+    position: absolute;
+    left: 90%;
+    text-align: center;
+}
+
+.centr .wish::before {
+    position: absolute;
+    content: attr(data-count-1);
+    content: "0";
+    top: 0px;
+    right: -3px;
+    font-size: 11px;
+    color: #84bc22;
+    padding: 3px 5px;
+    background: white;
+    border: #84bc22 solid 1px;
+    border-color: #84bc22;
+    border-radius: 50px;
+    line-height: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+.wish.add-numb1::before {
+    opacity: 1;
+
+}
+
+.cart-header {
+    text-align: center;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.cart-header .sec-1 span a {   
+    color: #84bc22;
+}
+
+.cart-header .sec-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px;
+}
+
+.cart-header .sec-2 h2 {
+    font-size: 48px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cart-header .sec-2 div.lines {
+
+    height: 2px;
+    background-color: #e5e2df;
+    width: 30%;
+}
+
+
+.payment {
+    margin: 0 2% 5%;
+    padding: 0;
+    height: 140vh;
+}
+
+.payment .cart-wrapper {
+    margin: 0 auto;
+    width: 94%;
+    background: white;
+    height: 100%;
+}
+
+.payment .cart-wrapper .csubwrapper .pay-1 {
+    padding: 3rem;
+}
+
+.payment .cart-wrapper .csubwrapper .pay-2 {
+    padding: 3rem;
+}
+
+.payment .cart-wrapper .csubwrapper .pay-1 .rw-1,
+.payment .cart-wrapper .csubwrapper .pay-1 .rw-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    align-items: center;
+}
+
+.payment .cart-wrapper .csubwrapper .pay-1 .rw-1 .quantity,
+.payment .cart-wrapper .csubwrapper .pay-1 .rw-2 .quantity {
+    width: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #a19f9e solid;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #a19f9e;
+}
+
+.payment .cart-wrapper .csubwrapper .pay-1 .rw-2 .quantity {
+    margin-left: 4.5%;
+}
+
+.payment .cart-wrapper .csubwrapper .pay-1 .rw-1 .quantity span {
+    cursor: pointer;
+}
+
+.payment .cart-wrapper .csubwrapper .pay-1 .rw-1 .quantity span.num {
+    pointer-events: none;
+}
+
+.closer .bttn {
+    padding: 2px 2px;
+    border:none;
+    border-radius: 50%;
+    align-items: center;
+    background: transparent;
+}
+
+.payment .cart-wrapper .csubwrapper .pay-1 .rw-2 .quantity .closer button i {
+    color: #a19f9e;
+    background-size: cover;
+
+}
+
+form.manage {
+    padding: 5.3571428571rem 7.1428571429rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+form.manage div.coupon {
+    width: 40%;
+    text-align: left;
+}
+
+form.manage div.coupon input[type="text"] {
+    width: 60%;
+    margin-right: 5%;
+    border-radius: 35px;
+    border: 0.15rem solid #e8e2d6;
+    padding: 0.7142857143rem 1.4285714286rem;
+    color: #45413e;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+}
+
+form.manage div.coupon input[type="submit"] {
+    width: 30%;
+    border-color: #84bc22;
+    color: #84bc22;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.1428571429rem;
+    padding: 0.5714285714rem 1.4285714286rem;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+form.manage div.checkout {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+form.manage div.checkout > div {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+form.manage div.checkout div.btns button.update {
+    min-width: 35%;
+    white-space: nowrap;
+    border-color: #84bc22;
+    color: #84bc22;
+    background-color: #ffffff;
+    margin-right: 5%;
+    text-transform: uppercase;
+    font-size: 1.1428571429rem;
+    padding: 0.5714285714rem 1.4285714286rem;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+form.manage div.checkout div.btns input[type="submit"] {
+    min-width: 55%;
+    color: #ffffff;
+    background-color: #84bc22;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.1428571429rem;
+    padding: 0.5714285714rem 1.4285714286rem;
+    border-width: 0.15rem;
+    border-style: solid;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+form.manage div.checkout div.subtotal {
+    margin-top: 3rem;
+}
+
+form.manage div.checkout h5 {
+    width: 55%;
+    text-transform: uppercase;
+    text-align: left;
+    color: #45413e;
+    font-size: 1rem;
+}
+
+form.manage div.checkout span,form.manage div.checkout ul.radios {
+    text-align: left;
+}
+
+form.manage div.checkout * {
+    color: #45413e;
+}
+
+form.manage * {
+    font-size: 1rem;
+}
+
+form.manage div.checkout div.shipping {
+    margin-top: 2.1428571429rem;
+}
+
+form.manage div.checkout > div {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+form.manage div.checkout h5 {
+    width: 55%;
+    text-transform: uppercase;
+    text-align: left;
+    color: #45413e;
+}
+
+form.manage div.checkout div.shipping ul.radios {
+    width: 45%;
+    text-align: left;
+    color: #45413e;
+}
+
+form.manage div.checkout div.shipping ul.radios li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+form.manage div.checkout div.shipping ul.radios li {
+    padding-left: 8%;
+}
+
+form.manage div.checkout div.shipping ul.radios li > input[type="radio"] {
+    opacity: 1;
+    visibility: visible;
+}
+
+form.manage div.checkout div.shipping ul.radios li > label {
+    position: relative;
+    cursor: pointer;
+}
+
+form.manage div.checkout div.total {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+form.manage div.checkout h5 {
+    width: 55%;
+    text-transform: uppercase;
+}
+
+form.manage div.checkout div.total span.price {
+    font-size: 3.4285714286rem;
+}
+
+
+
+
+/*********************** FOOTER RULES ***********************/
+
+.main-footer {
+    margin-top: 5%;
+    text-align: left;
+    margin-bottom: 0;
+    color: #a19f9e;
+}
+
+.inner-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 11px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.social li {
+    display: inline;
+    padding-right: 10px;
+
+}
+
+
+.main-footer * a {
+    color: #a19f9e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.notify button {
+    background-color: white;
+    border-color: white;
+    border: none;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
